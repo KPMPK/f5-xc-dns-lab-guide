@@ -9,6 +9,18 @@
 | **UDF Environment** | xc-dns-lab-v1 |
 | **Requirements** | NO LIVE TENANT REQUIRED |
 
+### 💡 Why No Live Tenant Required?
+
+This lab uses a **fully simulated F5 XC DNS environment** that provides the same hands-on experience as a live tenant:
+
+- **Realistic XC Console Interface** — The lab replicates the actual F5 Distributed Cloud Console UI, so you learn the real workflow and navigation.
+- **Simulated DNS Infrastructure** — All DNS operations (zone creation, record management, NS delegation) behave exactly like production.
+- **Safe Learning Environment** — Make mistakes without affecting real infrastructure. Reset and retry anytime.
+- **No Account Setup Required** — Jump straight into learning without waiting for tenant provisioning or API credentials.
+- **Consistent Experience** — Every participant gets the same pre-configured environment, ensuring predictable lab outcomes.
+
+> **🎯 Result:** You gain practical XC DNS skills that directly transfer to real-world deployments — without the complexity of managing a live tenant during training.
+
 ---
 
 ## 🎯 Lab Objectives
@@ -24,11 +36,21 @@ Learn how to use F5 Distributed Cloud DNS through hands-on labs covering:
 
 ## 🔬 Lab Series Overview
 
-| Lab | Topic | Description |
-|-----|-------|-------------|
-| **Lab 1** | DNS Availability | Eliminate single-provider DNS dependency using F5 Distributed Cloud DNS as a dual primary provider |
-| **Lab 2** | Attack Mitigation | (Locked) |
-| **Lab 3** | Hidden Primary | (Locked) |
+| Lab | Topic | Description | Status |
+|-----|-------|-------------|--------|
+| **Lab 1** | DNS Availability | Eliminate single-provider DNS dependency using F5 Distributed Cloud DNS as a dual primary provider | 🔓 Active |
+| **Lab 2** | Attack Mitigation | XC DNS doesn't just serve DNS — it absorbs DDoS attacks. Watch a live flood get mitigated in real time | 🔒 Locked |
+| **Lab 3** | Hidden Primary | The attacker cannot target what they cannot find. Hide BIND behind XC DNS for maximum protection | 🔒 Locked |
+
+### 🔒 Why are Lab 2 and Lab 3 locked?
+
+Labs are designed to be completed **sequentially**. Each lab builds upon the configuration and knowledge from the previous lab:
+
+- **Lab 2 (Attack Mitigation)** requires the XC DNS zone and dual primary setup from Lab 1 to demonstrate how XC DNS absorbs DDoS attacks while Legacy BIND would be overwhelmed.
+
+- **Lab 3 (Hidden Primary)** requires understanding of both DNS availability (Lab 1) and attack mitigation (Lab 2) to implement the hidden primary architecture where BIND is completely invisible to attackers.
+
+> **💡 Tip:** Complete Lab 1 first, then Lab 2 and Lab 3 will automatically unlock.
 
 ---
 

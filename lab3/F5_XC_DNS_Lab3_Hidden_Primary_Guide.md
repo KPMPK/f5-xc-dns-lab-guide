@@ -45,7 +45,7 @@ Welcome to Lab 3! In this lab, you will learn how to hide your origin DNS server
 
 The first step is to inspect NS records and find the BIND IP address.
 
-1. Click on **"Find BIND IP"** in the left navigation or **"Inspect NS Records"** in the progress bar.
+1. Click on **"Inspect NS Records"** in the progress bar.
 
 2. You will see **STEP 1 OF 7 - INSPECT NS RECORDS** with instructions.
 
@@ -91,7 +91,7 @@ Click on the **"Hints & Context"** tab to understand:
 
 Now we'll pull the DNS zone from Legacy BIND to XC DNS using AXFR (zone transfer).
 
-1. Click on **"Pull zone to XC DNS"** in the left navigation or **"AXFR Zone"** in the progress bar.
+1. Click on **"AXFR Zone"** in the progress bar.
 
 2. You will see **STEP 2 OF 7 - AXFR ZONE** with instructions:
    - Transfer the DNS zone from Legacy BIND to XC DNS
@@ -404,7 +404,7 @@ Click on the **"Hints & Context"** tab to understand:
 
 The ultimate test: take Legacy BIND completely offline and verify DNS continues working.
 
-1. Click on **"Ultimate test"** in the left navigation or **"BIND Fully Offline"** in the progress bar.
+1. Click on  **"BIND Fully Offline"** in the progress bar.
 
 2. You will see **STEP 7 OF 7 - BIND FULLY OFFLINE** with instructions:
    - The ultimate test: take Legacy BIND completely offline. Stop the named service entirely. XC DNS should continue serving from its cached zone — proving the hidden primary architecture is fully resilient.
