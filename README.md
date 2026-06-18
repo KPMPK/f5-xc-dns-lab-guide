@@ -19,6 +19,14 @@ This repository contains comprehensive hands-on lab guides for **F5 Distributed 
 
 ---
 
+## 🚀 Getting Started
+
+Before starting the labs, you need to access the lab environment through F5 UDF and Kasm Workspaces.
+
+📖 [**How to Access Lab Environment**](how%20to%20access%20lab%20environment/How_to_Access_Lab_Environment.md) — Step-by-step guide to access UDF and Kasm Workspaces
+
+---
+
 ## 🔬 Lab Series
 
 | Lab | Topic | Description | Duration |
@@ -78,6 +86,9 @@ This repository contains comprehensive hands-on lab guides for **F5 Distributed 
 ```
 f5-xc-dns-lab-guide/
 ├── README.md                 # This file
+├── how to access lab environment/  # Getting Started Guide
+│   ├── How_to_Access_Lab_Environment.md
+│   └── step*.png             # Access guide screenshots
 ├── lab1/                     # Lab 1: DNS Availability
 │   ├── F5_XC_DNS_Lab_Guide.md
 │   ├── F5_XC_DNS_Lab_Guide.pdf
